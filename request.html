@@ -1,0 +1,13 @@
+<script src="request.js"></script>
+<script>
+
+var connection = new Async("https://maps.google.com/maps/api/geocode/json?address=300+W+Hastings+Vancouver,+BC&sensor=false&key=AIzaSyAPHhHcY9JGUE4pwDrfRuOJI4iEkYN25rc")
+connection.create(callback);
+function callback(){
+    console.log(connection.response(true).results[0].geometry.location)
+}
+
+</script>
+
+
+
